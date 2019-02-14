@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Question_4</title>
+</head>
+<body>
+	<script>
+		var mainObj;
+		mainObj={"a": 1, "b": 2,
+	};
+
+	document.write("mainObj.a ",mainObj.a);
+	document.write("<br>mainObj.b ",mainObj.b);
+	var copyObj={};
+	document.write("<br>Before copy: ");
+	document.write("<br>copyObj.a ",copyObj.a);
+	document.write("<br>copyObj.b ",copyObj.b);
+	function copy(copyObj,mainObj) {
+  for (key in mainObj) {
+    copyObj[key] = mainObj[key]; 
+  }
+}
+	copy(copyObj,mainObj);
+	document.write("<br>After copy: ");
+	document.write("<br>copyObj.a ",copyObj.a);
+	document.write("<br>copyObj.b ",copyObj.b);
+	</script>
+</body>
+
+</html>
