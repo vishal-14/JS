@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Question_1</title>
+</head>
+<body>
+	<script>
+		var str= prompt("Enter the String ");
+		
+		function isPalindrome(str)
+		{
+			var l = str.length;
+
+			for(var i=0; i< Math.floor(l/2);i++){
+				if(str[i]!=str[l-1-i])
+					return false;
+			}
+			return true;
+		}
+
+		if(isPalindrome(str))
+			alert("The string is palindrome");
+		else
+			alert("The String is not palindrome");
+	</script>
+</body>
+
+</html>
